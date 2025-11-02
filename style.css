@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    border: none;
+    padding: 0;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+
+
+body{
+    background: #1c1c1c;
+    min-height: 100lvh;
+    align-content: center;
+    justify-items: center;
+}
+
+
+
+/* Main container */
+.RegistorContaienr{
+    padding: 20px 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.562), inset 0px 0px 3px 0px rgba(212, 205, 205, 0.493);
+    transition: .3s;
+    user-select: none;
+
+}
+
+.RegistorContaienr:hover {
+  animation: ContainerLdEfekt 3s ease-in-out infinite;
+  transform: scale(1.05);
+   box-shadow: 0 0 10px 1px rgba(75, 145, 211, 0.8),
+         inset 0 0 8px 1px rgba(77, 192, 212, 0.932);
+  /*animation-delay: .3s;
+  */
+}
+
+/* @keyframes ContainerLdEfekt {
+  0%, 100% {
+    box-shadow:
+       0 0 10px 1px rgba(255, 255, 255, 0.8),
+         inset 0 0 8px 1px rgba(255, 255, 255, 0.6);
+  }
+  25% {
+    box-shadow:
+      0 0 25px 3px rgba(255, 64, 64, 0.85),
+      inset 0 0 20px 2px rgba(255, 150, 150, 0.5);
+  }
+  50% {
+    box-shadow:
+      0 0 25px 3px rgba(64, 128, 255, 0.85),
+      inset 0 0 20px 2px rgba(150, 180, 255, 0.5);
+  }
+  75% {
+    box-shadow:
+      0 0 25px 3px rgba(64, 255, 150, 0.85),
+      inset 0 0 20px 2px rgba(180, 255, 210, 0.5);
+  }
+} */
+
+
+/* Main container header */
+
+.ContainerHeader{
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Main container Boyd */
+
+.ContainerBody{
+    padding: 10px 5px;
+    gap: 17px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.InputTitleCon{
+    position: relative;
+    height: 16px;
+}
+
+.InputTitleCon b {
+  position: absolute;
+  transition: 0.2s;
+  color: #555;
+  transform: translateY(19px) translateX(5px);
+  pointer-events: none;
+}
+
+.Input{
+    color: black;
+    padding: 3px 6px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+
+
+
+
+/* Main container Footer */
+
+.containerFooter{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btn{
+    cursor: pointer;
+    padding: 3px 5px;
+    border: none;
+    border-radius: 5px;
+    background: rgb(95, 95, 226);
+    color: black;
+    transition: .3s;
+}
+
+.btn--primary:hover{
+    background: rgb(60, 60, 221);
+}
+
+.btn--primary{
+    width: 100%;
+    margin-top: 10px;
+}
+
+.form__footer{
+    margin-top: 5px;
+    display: flex;
+}
+.form__footer *{
+    transform: scale(.9);
+}
+
+
+.btn--link{
+    background: none;
+    padding: 0px;
+    color: blue;
+    border-radius: 0px;
+    text-decoration: underline;
+}
+
+/* Mesage box code */
+

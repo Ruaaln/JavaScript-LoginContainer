@@ -1,15 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Document</title>
-</head>
-<body>
-    
+  </head>
+  <body>
+    <div id="mainCon" class="RegistorContaienr">
+      <div class="ContainerHeader">
+        <div><b>Login</b></div>
+      </div>
 
+      <div class="ContainerBody">
+        <div class="InputCon">
+          <div class="InputTitleCon"><b>Name</b></div>
+          <input class="Input" id="InputName" type="text" />
+        </div>
 
-    <script src="./script.jS"></script>
-</body>
+        <div class="InputCon">
+          <div class="InputTitleCon"><b>Email</b></div>
+          <input class="Input" id="InputEmail" type="text" />
+        </div>
+
+        <div class="InputCon">
+          <div class="InputTitleCon"><b>Password</b></div>
+          <input class="Input" id="InputPassword" type="password" />
+        </div>
+      </div>
+
+      <div class="containerFooter">
+        <div class="form__actions">
+          <button onclick="SingIn()" id="LoginBtn" class="btn btn--primary">Giriş et</button>
+        </div>
+
+        <div class="form__footer">
+          <p class="form__text">Hesabın yoxdur?</p>
+          <button onclick="SingUp()" class="btn btn--link">Hesab yarat</button>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
 </html>
